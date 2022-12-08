@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+ <div class="wrapper-main">
+
+  <header>
+    <div class="group-h">
+      <h3 class="notifications-h">Notifications </h3>
+      <span class="notif-count">3</span>
+    </div>
+
+    <p class="notifications-h button">Mark all as read</p>
+  </header>
+
+<div class="wrapper">
+  
+  <div class="flex-container">
+    <div class="person person-1">
+    <img src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber's profile picture" aria-hidden="true">
+    <div class="group-elements">
+      <div class="person-info-group">
+        <div class="name">Mark Webber</div>reacted to your recent post 
+        <a href="#" class="post-action">My first tournament today!</a>
+        <span class="unread"></span>
+      </div>
+    <time>1m ago</time>
+  </div>
+    </div>
+
+    <div class="person person-2">
+      <img src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray's profile picture" aria-hidden="true">
+      <div class="group-elements">
+        <div class="person-info-group">      
+          <div class="name">Angela Gray</div> followed you
+          <span class="unread"></span>
+        </div>
+        <time>5m ago</time>
+        </div>
+      </div>
+
+    <div class="person person-3">
+      <img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson's profile picture" aria-hidden="true">
+      <div class="group-elements">
+        <div class="person-info-group">
+          <div class="name">Jacob Thompson</div> has joined your group 
+          <a href="#" class="group-action">Chess Club</a>
+          <span class="unread"></span>
+        </div>
+        <time>1 day ago</time>
+      </div>
+    </div>
+
+    <div class="private-message">
+      <div class="person person-4">
+        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin's profile picture" aria-hidden="true">
+        <div class="group-elements">
+          <div class="person-info-group">
+            <div class="name">Rizky Hasanuddin</div> sent you a private message
+          </div>
+          <time>5 days ago</time>
+         <a href="#"><p class="personal-message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.</p></a>
+          </div>
+        </div>
+  </div>
+
+    <div class="person person-5">
+        <img src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly's profile picture"  aria-hidden="true">
+      <div class="group-elements">
+        <div class="person-info-group">
+          <div class="name">Kimberly Smith</div> commented on your picture
+        </div>
+      <time>1 week ago</time>
+    </div> 
+        <a href="#" class="postpicture-link">
+          <img class="post-picture" src="./assets/images/image-chess.webp" alt="Kimberly's post picture">
+        </a>
+    </div>
+
+    <div class="person person-6">
+      <img src="./assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson's profile picture" aria-hidden="true">
+      <div class="group-elements">
+        <div class="person-info-group">
+          <div class="name">Nathan Peterson</div> reacted to your recent post
+          <a href="#" class="post-action">5 end-game strategies to increase your win rate</a>
+        </div>
+        <time>2 weeks ago</time>
+    </div>
+  </div>
+
+    <div class="person person-7">
+      <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim's profile picture" aria-hidden="true">
+      <div class="group-elements">
+        <div class="person-info-group">
+          <div class="name">Anna Kim</div>left the group 
+          <a href="#" class="group-action">Chess Club</a>
+        </div>
+        <time>2 weeks ago</time>
+      </div>
+  </div>
+
+  </div>
+</div>
+</div>
+
+<!--This javascript code was copied from the internet, as im in the process of learning JS, but still have no prior
+knowledge of its syntax. This was done so i could fill in the need from the README file!-->
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+  $(".button").click(function(){
+    $("span").removeClass("unread");
+    $('.notif-count').remove();
+  });
+});
+</script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">OneBitMance</a>.
+  </div>
+</body>
+</html>
